@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<div id=container>
+
+    <body>
+        <header>
+
+            <h3>HOJA DE INSCRIPCIÓN <br /> EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h3>
+
+        </header>
+
+        <section>
+            <div id=datos>
+                <fieldset>
+                    <legend>Datos personales:</legend>
+                    <div class=linea>
+                        <div class=item>
+                            <label for="apellidos"> Apellidos: </label> <br />
+                            <input type="text" name="apellidos" size="35" />
+                        </div>
+                        <div class=item>
+                            <label for="nombre">Nombre: </label> <br />
+                            <input type="text" name="nombre" size="30" />
+                        </div>
+                        <div class=item>
+                            <label for="dni">DNI: </label> <br />
+                            <input type="text" name="dni" size="9" />
+                        </div>
+                    </div>
+
+                    <div class=linea>
+                        <div class=item>
+                            <label for="nacido"> Nacido/a en: </label> <br />
+                            <input type="text" name="nacido" />
+                        </div>
+                        <div class=item>
+                            <label for="provincia"> Provincia: </label> <br />
+                            <select name="provincia">
+                                <option value="MAD">Madrid</option>
+                                <option value="BCN">Barcelona</option>
+                                <option value="SEV">Sevilla</option>
+                                <option value="VAL" selected>Valencia</option>
+                                <option value="SAL">Salamanca</option>
+                                <option value="BAD">Badajoz</option>
+                            </select>
+                        </div>
+                        <div class=item>
+                            <label for="nacimiento">Fecha de nacimiento: </label> <br />
+                            <input type="date" name="nacimiento" />
+                        </div>
+                    </div>
+
+                    <div class=linea>
+                        <div class=item2>
+                            <label for="domicilio"> Domicilio (Calle, plaza y numero): </label> <br />
+                            <input type="text" name="domicilio" size="70" />
+                        </div>
+                        <div class=item>
+                            <label for="postal">Código postal: </label> <br />
+                            <input type="text" name="postal" size="5" />
+                        </div>
+                    </div>
+
+                    <div class=linea>
+                        <div class=item>
+                            <label for="localidad"> Localidad: </label> <br />
+                            <input type="text" name="localidad" />
+                        </div>
+                        <div class=item>
+                            <label for="provincia"> Provincia: </label> <br />
+                            <select name="provincia">
+                                <option value="MAD">Madrid</option>
+                                <option value="BCN">Barcelona</option>
+                                <option value="SEV">Sevilla</option>
+                                <option value="VAL" selected>Valencia</option>
+                                <option value="SAL">Salamanca</option>
+                                <option value="BAD">Badajoz</option>
+                            </select>
+                        </div>
+                        <div class=item>
+                            <label for="telefono">Teléfono: </label> <br />
+                            <input type="tel" name="telefono" />
+                        </div>
+                    </div>
+
+            </div>
+
+            <div id="requisitos">
+                <fieldset>
+                    <legend>Requisitos de acesso:</legend>
+
+                    <input type="radio" name="opcion" value="dir" />Directo
+                    <blockquote>
+                        <input type="radio" name="directo_mod" value="bach_mod" />Bachillerato LOGSE. Modalidad:
+                        <input type="text" name="bach_mod" /></br>
+                        <input type="radio" name="directo_mod" value="bach_exp" />Bachillerato experimental.</br>
+                        <input type="radio" name="directo_mod" value="cou" />COU.Opción: <input type="text"
+                            name="cou" /></br>
+                        <input type="radio" name="directo_mod" value="fp2" />FP2.</br>
+                        <input type="radio" name="directo_mod" value="otros" />Otros (especifique): <input type="text"
+                            name="otros" />
+                    </blockquote>
+                    <input type="radio" name="opcion" value="prueba" />Mediante prueba.<br />
+
+                </fieldset>
+            </div>
+            <div id="solicitud">
+                <fieldset>
+                    <legend>Solicitud:</legend>
+                    <div class=linea>
+                        <p>El/la que suscribe desea ser admitido en este centro para cursar el cliclo formativo de grado
+                            superior:</br>Ciclo formativo:
+
+                            <select name="ciclo">
+                                <option value="DAM">Desarrollo de app. Multiplataforma.</option>
+                                <option value="DAW">Desarrollo de app. Web.</option>
+                                <option value="ELEC">Electricidad y electrónica.</option>
+                            </select>
+                            </br> En caso de no ser admitido/a, solicita la admisión por orden de preferencia en los
+                            siguientes:
+                        </p>
+                    </div>
+                    <div class=linea>
+                        <div class=item>
+                            <label for="ciclos"> <B>Ciclos formativos:</B></label> <br />
+                            <input type="text" name="ciclos" size="35" />
+                            <input type="text" name="ciclos" size="35" />
+                        </div>
+                        <div class=item>
+                            <label for="centros"><B>Centros:</B></label> <br />
+                            <input type="text" name="centros" size="35" />
+                            <input type="text" name="centros" size="35" />
+                        </div>
+                        <div class=item>
+                            <label for="localidad_centro"><B>Localidad:</B></label> <br />
+                            <input type="text" name="localidad_centro" size="25" />
+                            <input type="text" name="localidad_centro" size="25" />
+                        </div>
+                    </div>
+                    <p>Modalidad de horario especial (marque): <input type="checkbox" name="he" value="he" /></p>
+                </fieldset>
+            </div>
+
+            <div id=documentacion>
+                <fieldset>
+                    <legend>Documentación presentada: </legend>
+                    <div class=linea>
+                        <div class=item>
+                            <input type="checkbox" name="fotocopia" value="fot" /> Fotocopia DNI.
+                        </div>
+                        <div class=item>
+                            <input type="checkbox" name="certificado" value="cert" /> Certificado académico.
+                        </div>
+
+                    </div>
+                    <div class=linea>
+                        <div class=item2>
+                            <input type="checkbox" name="otro_docu" value="Otr_documento" /> Otro documento
+                            (Especifique): <input type="text" name="otr_docu" size="40">
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+            <div id=comunicacion>
+                <fieldset>
+                    <legend>Comunicación: </legend>
+                    <div class=linea>
+                        <p>De acuerdo con el artículo 42.2 de la Ley 30/1992, de 26 de noviembre, de Régimen Jurídico de
+                            las Administraciones Públicas
+                            y del Procedimiento Administrativo Común, según la nueva redacción de la Ley 4/1999, de 13
+                            de enero, se informa que:
+                            <ul>
+                                <li>El plazo máximo para resolver la presente solicitud es de 3 meses desde la fecha en
+                                    que haya tenido entrada en el
+                                    registro del órgano competente para la tramitación, sin perjuicio de los previsto en
+                                    el artículo 42.5 de la misma ley.
+                                </li>
+                                <li>El efecto que producirá el silencio administrativo si transcurre el plazo sin que se
+                                    haya dictado y notificado la resolución
+                                    correspondiente, es desestimatorio de la solicitud.
+                                </li>
+                            </ul>
+                            <input type="text" name="ciudad" size="25" />, <input type="text" name="dia" size="2" /> de
+                            <select name="mes">
+                                <option value="enero">Enero</option>
+                                <option value="febrero">Febrero</option>
+                                <option value="marzo">Marzo</option>
+                                <option value="abril">Abril</option>
+                                <option value="mayo">Mayo</option>
+                                <option value="junio">Junio</option>
+                                <option value="julio">Julio</option>
+                                <option value="agosto">Agosto</option>
+                                <option value="septiembre">Septiembre</option>
+                                <option value="octubre">Octubre</option>
+                                <option value="noviembre">Noviembre</option>
+                                <option value="diciembre">Diciembre</option>
+                            </select>
+                            de
+                            <select name="ano">
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                            </select>
+
+                            <br> La persona solicitante,</br>
+                        </p>
+                    </div>
+                    <div class=firma>
+                        <p>Registro de entrada</p>
+                    </div>
+                    <div class=linea>
+                        <p>Firma.</p>
+                    </div>
+
+            </div>
+
+
+        </section>
+
+        <footer>
+            <div id=recuadro_foot>
+                <p>(*) Los datos personales contenidos en este impreso podrán ser incluidos en un fichero para su
+                    tratamiento por la consejeria de Cultura
+                    y Educación, en el uso de las funciones propias que tiene atribuidas en el ámbito de sus
+                    competencias, pudiendo dirigirse a cualquier
+                    órgano de la misma para ejercitar los derechos de acceso, rectificación, cancelación y oposición,
+                    según lo dispuesto en la Ley Órganica 15/1999,
+                    de 13 de Diciembre, de Protección de Datos de Carácter Personal (BOE núm 298, de 14 de Diciembre de
+                    1999).
+                </p>
+            </div>
+            <h2><b>DIRECTOR/A O TITULAR DEL CENTRO</b></h2>
+
+        </footer>
+    </body>
+</div>
+
+</html>

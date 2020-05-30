@@ -1,0 +1,88 @@
+#container {
+    width: 70%;
+    background-color: rgb(238, 238, 238);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 500;
+}
+
+header {
+    background-color: rgb(201, 201, 201);
+    width: 100%;
+}
+
+header h3 {
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+.firma {
+    width: 150px;
+    height: 150px;
+    float: right;
+    background-color: white;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: small;
+
+}
+
+#datos {
+    background-color: rgb(207, 207, 207);
+    margin: 10px;
+}
+
+#requisitos {
+    background-color: rgb(255, 252, 212);
+    margin: 10px;
+}
+
+#solicitud {
+    background-color: rgb(151, 221, 244);
+    margin: 10px;
+}
+
+#documentacion {
+    background-color: rgb(210, 136, 176);
+    margin: 10px;
+}
+
+#comunicacion {
+    background-color: rgb(150, 184, 107);
+    margin: 10px;
+}
+
+#recuadro_foot {
+    border: 2px dashed #000;
+    font-size: smaller;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+footer h2{
+    text-align: center;
+}
+
+
+.linea {
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.item {
+    width: 33%;
+    float: left;
+}
+
+.item2 {
+    width: 66%;
+    float: left;
+}
+
